@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --primary-color: rgba(13, 138, 191, 0.65); 
+  --secondary-color: rgba(13, 191, 96, 0.85); 
+  --overlay-color: rgba(24, 39, 51, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+p {
+  margin: 3px 0;
+}
+
+/* Showcase */
+#showcase {
+  background: var(--primary-color); 
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url('../img/beach.jpg') no-repeat center center/cover;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcase-container h1 {
+  font-size: 43px;
+}
+
+.showcase-container p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.5rem 1.2rem;
+  margin-top: 18px;
+  transition: all 1s ease;
+  border: none;
+}
+
+.btn:hover {
+  padding: 0.7rem 1.5rem;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
